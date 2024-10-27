@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <header>
+    <img src="logo.jpeg" alt="logo" width="110px" height="110px">
+    <div>
+        <a href="home.html">home</a>
+        <a href="club_presentation.html">about us</a>
+        <a href="club_activities.html">our activities</a>
+        <a href="contacus.html">contact us</a>r
+    </div>
+    <a href="donation.html"><button>donate now</button></a>
+   </header> 
+   <p>Every contribution makes a difference! By donating to our Social Club, you help us continue our mission of supporting those in need within our community.<br>
+      Your generosity enables us to organize essential activities such as food distributions, humanitarian caravans, and educational support for underserved families.<br>
+      Whether you choose to give monetary donations, food items, or other supplies,<br>
+      your support directly impacts lives and fosters hope for a brighter future. <br>
+      Join us in making a meaningful change—every donation counts, and together, we can create a positive ripple effect in our community!</p>
+   <h2>Donation Form</h2>
+<form action="#" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" required><br>
+
+    <label for="donation-type">Type of Donation:</label>
+    <select id="donation-type" name="donation-type" required>
+        <option value="">--Select--</option>
+        <option value="money">Monetary Donation</option>
+        <option value="food">Food Items</option>
+        <option value="clothing">Clothing</option>
+        <option value="supplies">School Supplies</option>
+        <option value="other">Other</option>
+    </select><br>
+
+    <label for="amount">Amount (if monetary donation):</label>
+    <input type="number" id="amount" name="amount" placeholder="Enter amount" min="1" step="0.01"><br>
+
+    <label for="message">Message (optional):</label>
+    <textarea id="message" name="message" rows="4"></textarea><br>
+
+    <input type="submit" value="Submit Donation">
+</form>
+
+</body>
+</html>
